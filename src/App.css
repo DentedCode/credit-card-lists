@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+body {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.add-new-card {
+  margin-top: 40px;
+}
+.new-cc-form {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 300px;
+  background: #e5e2e2;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-new-cc-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.input-group {
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+select {
+  width: 173px;
+}
+
+[type="submit"] {
+  margin-top: 20px;
+}
+[name="month"],
+[name="year"] {
+  width: 80px;
+}
+
+.error {
+  /* background: red; */
+  color: red;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+  .add-new-cc-form {
+    display: flex;
+    flex-direction: column;
   }
 }
